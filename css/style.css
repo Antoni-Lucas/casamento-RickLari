@@ -79,10 +79,29 @@ header {
 
 @media (max-width: 600px) {
   .container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* Mantém duas colunas */
+    gap: 15px;
+    padding: 10px;
   }
+
+  .item {
+    padding: 10px;
+  }
+
+  .item .name {
+    font-size: 1.2rem;
+  }
+
+  .item .price {
+    font-size: 1rem;
+  }
+
+  .item .pix {
+    font-size: 0.95rem;
+  }
+
   header {
-    font-size: 2rem;
-    padding: 40px 15px;
+    font-size: 1.6rem;
+    padding: 15px;
   }
 }
